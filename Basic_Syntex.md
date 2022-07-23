@@ -32,6 +32,8 @@ fun main() {
 
 return 값이 없는 경우 Unit 사용
 
+
+
 ### variables(변수)
 
 ```kotlin
@@ -52,6 +54,24 @@ fun main() {
 
 **함수 내에서는 선언도 가능 but, 자료형 선언 필수**
 
+
+
+```kotlin
+///...
+var a: Int = 3
+val b: Int = 4
+
+a = 4			// (O)
+b = 3			// (X)
+///...
+```
+
+var(variable): 값 변경 가능
+
+val(value): 값 변경 불가능
+
+
+
 ### class(클래스)
 
 ```kotlin
@@ -64,7 +84,7 @@ class Rectangle(var height: Double, var length: Double): Shape() {
 }
 
 fun main() {
-    var rectangle = Rectangle(5.0, 2.0)
+    val rectangle = Rectangle(5.0, 2.0)
     println("The perimeter is ${rectangle.perimeter}")
 }
 ```
