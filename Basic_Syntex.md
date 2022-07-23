@@ -52,6 +52,10 @@ fun main() {
 
 **함수 내에서는 선언도 가능 but, 자료형 선언 필수**
 
+### "var" vs "val"
+
+
+
 ### class(클래스)
 
 ```kotlin
