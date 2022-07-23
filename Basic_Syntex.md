@@ -3,6 +3,8 @@
 ### Hello, world
 
 ```kotlin
+package Basic_Syntex
+
 fun main() {
   println(Hello, World!!)
 }
@@ -11,6 +13,8 @@ fun main() {
 ### Function(함수)
 
 ```kotlin
+package Basic_Syntex
+
 fun sum(a: Int, b: Int): Int {
     return a + b
 }
@@ -30,7 +34,9 @@ return 값이 없는 경우 Unit 사용
 
 ### variables(변수)
 
-```
+```kotlin
+package Basic_Syntex
+
 var a: Int = 1		// 정해진 자료형만 초기화 가능
 var b = 3					// 정해진 자료형 존재하지 않음
 //var c: Int			// err 발생
@@ -45,4 +51,23 @@ fun main() {
 전역에서는 초기화까지 해야함
 
 **함수 내에서는 선언도 가능 but, 자료형 선언 필수**
+
+### class(클래스)
+
+```kotlin
+package Basic_Syntex
+
+open class Shape
+
+class Rectangle(var height: Double, var length: Double): Shape() {
+    var perimeter = (height + length) * 2
+}
+
+fun main() {
+    var rectangle = Rectangle(5.0, 2.0)
+    println("The perimeter is ${rectangle.perimeter}")
+}
+```
+
+**상속을 사용하기 위해서는 open 키워드 사용**
 
