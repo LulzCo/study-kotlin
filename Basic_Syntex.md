@@ -3,18 +3,16 @@
 ### Hello, world
 
 ```kotlin
-package Basic_Syntex
-
 fun main() {
   println(Hello, World!!)
 }
 ```
 
+
+
 ### Function(함수)
 
 ```kotlin
-package Basic_Syntex
-
 fun sum(a: Int, b: Int): Int {
     return a + b
 }
@@ -34,11 +32,9 @@ return 값이 없는 경우 Unit 사용
 
 
 
-### variables(변수)
+### Variables(변수)
 
 ```kotlin
-package Basic_Syntex
-
 var a: Int = 1		// 정해진 자료형만 초기화 가능
 var b = 3					// 정해진 자료형 존재하지 않음
 //var c: Int			// err 발생
@@ -72,11 +68,9 @@ val(value): 값 변경 불가능
 
 
 
-### class(클래스)
+### Class(클래스)
 
 ```kotlin
-package Basic_Syntex
-
 open class Shape
 
 class Rectangle(var height: Double, var length: Double): Shape() {
@@ -90,4 +84,64 @@ fun main() {
 ```
 
 **상속을 사용하기 위해서는 open 키워드 사용**
+
+
+
+### String templates
+
+```kotlin
+fun main() {
+    var a = 1
+    val s1 = "a is ${a}"
+    println(s1)
+    a = 2
+    val s2 = "${s1.replace("is", "was")}, but now is ${a}"
+    println(s2)
+}
+```
+
+
+
+### if
+
+```kotlin
+fun maxOf(a: Int, b: Int): Int {
+    if (a > b) {
+        return a
+    } else {
+        return b
+    }
+}
+
+fun maxOf2(a: Int, b: Int): Int = if (a > b) a else b
+```
+
+같은 의미의 함수
+
+
+
+### for
+
+```kotlin
+val items = listOf("apple", "banana", "kiwifruit")
+for (item in items) {
+  println(item)
+}
+for (index in items.indices) {
+  println(items[index])
+}
+```
+
+
+
+### while
+
+```kotlin
+val items = listOf("apple", "banana", "kiwifruit")
+var index = 0
+while (index < items.size) {
+	println(items[index])
+  index++
+}
+```
 
