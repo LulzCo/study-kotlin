@@ -145,3 +145,19 @@ while (index < items.size) {
 }
 ```
 
+
+
+### when
+
+```
+fun describe(obj: Any) : String =
+    when (obj) {
+        1           -> "one"
+        "Hello"     -> "greeting"
+        is Long     -> "long"
+        !is String  -> "not a string"
+        else        -> "unknown"
+    }
+```
+
+switch와 같은 개념
