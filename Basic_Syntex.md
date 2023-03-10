@@ -188,7 +188,7 @@ fun main() {
     for (x in 1..5) {
         println(x);
     }
-    println()
+    println()q
     for (x in 1..5 step 2) {
         println(x);
     }
